@@ -16,7 +16,7 @@ public class RegisterNewUser {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://iecr.softalliance.com/");
+		driver.get("");
 		
 		//driver.findElement(By.xpath("//input[@name='phone_number']")).sendKeys("09024884308");
 		driver.findElement(By.xpath("//a[contains(text(),'Register')]")).click();
