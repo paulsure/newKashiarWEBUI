@@ -26,19 +26,19 @@ public class AddReturnableProduct extends UtilsKashiar {
 	@Test
 	public void kashiar() throws InterruptedException {
 		// initiating webdriver
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\iankoh.SOFTALLIANCE\\Documents\\sellenium drivers\\gecko driver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
-		driver.get("https://iecr.softalliance.com/");
+		driver.get("");
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 
 		// instantiating object of Login class
 		LoginPage login = PageFactory.initElements(driver, LoginPage.class);
 		// input phonenumber
 		
-		login.getPhoneNumber().sendKeys("09024884308");
+		login.getPhoneNumber().sendKeys("");
 		// pin
-		login.getPinCode().sendKeys("12345");
+		login.getPinCode().sendKeys("");
 		// click login
 		login.clickButton().click();
 		Thread.sleep(2000);
