@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-	// public static String PAGE_URL="https://iecr.softalliance.com/";
+	
 	 
   final WebDriver driver;
 	 
