@@ -23,14 +23,14 @@ public class AddUnitOfMeasurement extends UtilsKashiar {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://iecr.softalliance.com/");
+		driver.get("");
 		
 		// instantiating object of Login class
     	LoginPage login = PageFactory.initElements(driver, LoginPage.class);
 		//input phonenumber
-		login.getPhoneNumber().sendKeys("09024884308");
+		login.getPhoneNumber().sendKeys("");
 		//pin
-		login.getPinCode().sendKeys("12345");
+		login.getPinCode().sendKeys("45");
 		//click login
 		login.clickButton().click();		Thread.sleep(3000);
 		
